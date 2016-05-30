@@ -8,8 +8,6 @@
 
 {include file="frontend/components/header.tpl" pageTitleTranslated="$title"}
 
-<link rel="stylesheet" href="{$baseUrl}/plugins/generic/primaryNavigation/css/primaryNavigation.css" type="text/css" />
-
 	{* Sponsors *}
 	{if $sponsorship.sponsorNote || $sponsorship.sponsors}
 		<div class="sponsors">

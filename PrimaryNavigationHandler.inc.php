@@ -46,7 +46,6 @@ class PrimaryNavigationHandler extends Handler {
 		// create new page for sponsors
 		$templateMgr = TemplateManager::getManager($request);
 		$context = $request->getContext();
-
 		$templateMgr->assign('sponsorship', PluginAboutContextHandler::getSponsorshipInfo($context));
 		$templateMgr->assign('pageTitle', 'plugins.generic.primaryNavigation.editorialPolicies.title');
 		$primaryNavigationPlugin = PluginRegistry::getPlugin('generic', PRIMARYNAVIGATION_PLUGIN_NAME);

@@ -8,8 +8,6 @@
 
 {include file="frontend/components/header.tpl" pageTitleTranslated="$title"}
 
-<link rel="stylesheet" href="{$baseUrl}/plugins/generic/primaryNavigation/css/primaryNavigation.css" type="text/css" />
-
 <h2>{translate key="plugins.generic.primaryNavigation.editorialPolicies.title"}</h2>
 
 <h3>{translate key="plugins.generic.primaryNavigation.copyrightNotice"}</h3>
