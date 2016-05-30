@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * @file plugins/generic/primaryNavigation/locale/de_DE/locale.xml
+  *
+  * Copyright (c) 2016 Language Science Press
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for this plugin.
+  *
+  -->
+
+<locale name="de_DE" full_name="German">
+
+	<message key="plugins.generic.primaryNavigation.displayName">Primary Navigation Plugin</message>
+	<message key="plugins.generic.primaryNavigation.description">Dieses Plugin ersetzt das Template des Hauptmenüs.</message>
+
+	<message key="plugins.generic.primaryNavigation.catalog">Catalog</message>
+	<message key="plugins.generic.primaryNavigation.series">Series</message>
+	<message key="plugins.generic.primaryNavigation.about">About</message>
+	<message key="plugins.generic.primaryNavigation.team">Team</message>
+	<message key="plugins.generic.primaryNavigation.sponsors">Sponsors</message>
+	<message key="plugins.generic.primaryNavigation.policies">Policies</message>
+	<message key="plugins.generic.primaryNavigation.imprint">Imprint</message>
+	<message key="plugins.generic.primaryNavigation.contact">Contact</message>
+	<message key="plugins.generic.primaryNavigation.background">Background</message>
+	<message key="plugins.generic.primaryNavigation.goals">Goals</message>
+	<message key="plugins.generic.primaryNavigation.motivation">Motivation</message>
+	<message key="plugins.generic.primaryNavigation.vision">Vision</message>
+	<message key="plugins.generic.primaryNavigation.setup">Setup</message>
+	<message key="plugins.generic.primaryNavigation.community">Community</message>
+	<message key="plugins.generic.primaryNavigation.supporters">Supporters</message>
+	<message key="plugins.generic.primaryNavigation.advisoryBoard">Advisory Board</message>
+	<message key="plugins.generic.primaryNavigation.hallOfFame">Hall of Fame</message>
+	<message key="plugins.generic.primaryNavigation.supportUs">Support us</message>
+
+	<message key="plugins.generic.primaryNavigation.editorialPolicies.title">Redaktionelle Grundsätze</message>
+	<message key="plugins.generic.primaryNavigation.copyrightNotice">Copyright-Vermerk</message>
+
+
+</locale>
