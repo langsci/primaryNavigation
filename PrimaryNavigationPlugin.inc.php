@@ -59,19 +59,20 @@ class PrimaryNavigationPlugin extends GenericPlugin {
 		$press   = $request->getPress();		
 		$pageUrl =& $args[0];
 		$opUrl =& $args[1];
-
-		if ($pageUrl=='about' && $opUrl=='policies') {
+		if ($pageUrl=='policies') {
 
 			// load page for the policy link:
 			// (copyright notice, privacy statement, Peer Review Process, Open Access Strategy)
+			$opUrl =$pageUrl;
 			define('HANDLER_CLASS', 'PrimaryNavigationHandler');
 			define('PRIMARYNAVIGATION_PLUGIN_NAME', $this->getName());
 			$this->import('PrimaryNavigationHandler');
 			PrimaryNavigationHandler::setPlugin($this);
 			return true;
 		}
-		if ($pageUrl=='community' && $opUrl=='sponsors') {
-
+		if ($pageUrl=='sponsors') {
+			
+			$opUrl =$pageUrl;
 			// load page for the policy link:
 			// (copyright notice, privacy statement, Peer Review Process, Open Access Strategy)
 			define('HANDLER_CLASS', 'PrimaryNavigationHandler');
