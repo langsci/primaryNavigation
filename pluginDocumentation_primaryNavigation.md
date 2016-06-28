@@ -12,7 +12,7 @@ Key data
 Description
 ============
 
-This plugin replaces the template for the primary navigation menu and the user navigation (meta navigation at the top/right). Additionally, it adds two new page (about/policies and community/sponsors). 
+This plugin replaces the template for the primary navigation menu and the user navigation (meta navigation at the top/right). Additionally, it adds two new pages (/policies and /sponsors). 
  
 Implementation
 ================
