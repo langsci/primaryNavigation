@@ -1,13 +1,21 @@
 {**
- * @file plugins/generic/primaryNavigation/templates/primaryNavMenuModified.tpl
+ * templates/frontend/components/primaryNavMenu.tpl
  *
- * Copyright (c) 2016 Language Science Press
+ * Copyright (c) 2014-2016 Simon Fraser University Library
+ * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Primary navigation menu list for OMP
  *}
-
 <ul id="navigationPrimary" class="pkp_navigation_primary pkp_nav_list">
+
+	{if $enableAnnouncements}
+		<li>
+			<a href="{url router=$smarty.const.ROUTE_PAGE page="announcement"}">
+				{translate key="announcement.announcements"}
+			</a>
+		</li>
+	{/if}
 
 	<li>
 		<a href="{url router=$smarty.const.ROUTE_PAGE page="catalog"}">
@@ -15,68 +23,35 @@
 		</a>
 	</li>
 
-	<li>
-		<a href="{url router=$smarty.const.ROUTE_PAGE page="series"}">
-			{translate key="plugins.generic.primaryNavigation.series"}
+	{if $contextInfo.editorialTeam || $contextInfo.submissions}
+		{assign var="submenu_class_attr" value=" class='has_submenu'"}
+	{/if}
+	<li{$submenu_class_attr}>
+		<a href="{url router=$smarty.const.ROUTE_PAGE page="about"}">
+			{translate key="navigation.about"}
 		</a>
-	</li>
-
-	<li class='has_submenu'>
-		<a>
-			{translate key="plugins.generic.primaryNavigation.background"}
-		</a>
+		{if $submenu_class_attr}
 		<ul>
 			<li>
-				<a href="{url router=$smarty.const.ROUTE_PAGE page="motivation"}">
-					{translate key="plugins.generic.primaryNavigation.motivation"}
+				<a href="{url router=$smarty.const.ROUTE_PAGE page="about"}">
+					{translate key="about.aboutThePress"}
 				</a>
 			</li>
+			{if not empty($contextInfo.editorialTeam)}
 			<li>
-				<a href="{url router=$smarty.const.ROUTE_PAGE page="setup"}">
-					{translate key="plugins.generic.primaryNavigation.setup"}
+				<a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialTeam"}">
+					{translate key="about.editorialTeam"}
 				</a>
 			</li>
+			{/if}
+			{if not empty($contextInfo.submissions)}
 			<li>
-				<a href="{url router=$smarty.const.ROUTE_PAGE page="vision"}">
-					{translate key="plugins.generic.primaryNavigation.vision"}
+				<a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="submissions"}">
+					{translate key="about.submissions"}
 				</a>
 			</li>
-
+			{/if}
 		</ul>
+		{/if}
 	</li>
-
-	<li class='has_submenu'>
-		<a>
-			{translate key="plugins.generic.primaryNavigation.community"}
-		</a>
-		<ul>
-			<li>
-				<a href="{url router=$smarty.const.ROUTE_PAGE page="advisoryBoard"}">
-					{translate key="plugins.generic.primaryNavigation.advisoryBoard"}
-				</a>
-			</li>
-			<li>
-				<a href="{url router=$smarty.const.ROUTE_PAGE page="supporters"}">
-					{translate key="plugins.generic.primaryNavigation.supporters"}
-				</a>
-			</li>
-			<li>
-				<a href="{url router=$smarty.const.ROUTE_PAGE page="sponsors"}">
-					{translate key="plugins.generic.primaryNavigation.sponsors"}
-				</a>
-			</li>
-			<li>
-				<a href="{url router=$smarty.const.ROUTE_PAGE page="hallOfFame"}">
-					{translate key="plugins.generic.primaryNavigation.hallOfFame"}
-				</a>
-			</li>
-			<li>
-				<a href="{url router=$smarty.const.ROUTE_PAGE page="supportUs"}">
-					{translate key="plugins.generic.primaryNavigation.supportUs"}
-				</a>
-			</li>
-		</ul>
-	</li>
-
 </ul>
-

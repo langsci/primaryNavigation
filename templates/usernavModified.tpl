@@ -1,11 +1,12 @@
 {**
- * plugins/generic/primaryNavigation/templates/usernavModified.tpl
+ * templates/header/frontend/usernav.tpl
  *
- * Copyright (c) 2016 Language Science Press
+ * Copyright (c) 2014-2016 Simon Fraser University Library
+ * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
+ * Site-Wide Navigation Bar
  *}
-
 <script type="text/javascript">
 	// Attach the JS file tab handler.
 	$(function() {ldelim}
@@ -14,26 +15,6 @@
 	{rdelim});
  </script>
 <ul id="navigationUser" class="pkp_navigation_user pkp_nav_list" role="navigation" aria-label="{translate|escape key="common.navigation.user"}">
-	<li>
-		<a class="social_media_icon" href="https://www.facebook.com/langsci/" title="Language Science Press on Facebook">
-			<img alt="" src="{$baseUrl}/plugins/generic/primaryNavigation/img/facebook30.png"></img>
-		</a>
-	</li>
-	<li>
-		<a class="social_media_icon" href="https://twitter.com/LangSciPress" title="Language Science Press on Twitter">
-			<img alt="" src="{$baseUrl}/plugins/generic/primaryNavigation/img/twitter30.png"></img>
-		</a>
-	</li>
-	<li>
-		<a class="social_media_icon" href="http://userblogs.fu-berlin.de/langsci-press/" title="The Language Science Press Blog">
-			<img alt="" src="{$baseUrl}/plugins/generic/primaryNavigation/img/blog30.png"></img>
-		</a>
-	</li>
-	<li>
-		<a class="social_media_icon" href="newsletterlink" title="Get the Language Science Press newsletter">
-			<img alt="" src="{$baseUrl}/plugins/generic/primaryNavigation/img/newsletter30.png"></img>
-		</a>
-	</li>
 	{if $isUserLoggedIn}
 		<li>
 			{include file="controllers/page/tasks.tpl"}

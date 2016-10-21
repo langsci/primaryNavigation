@@ -12,35 +12,31 @@ Key data
 Description
 ============
 
-This plugin replaces the template for the primary navigation menu and the user navigation (meta navigation at the top/right). Additionally, it adds two new pages (/policies and /sponsors). 
+This plugin replaces the template for the primary navigation menu and the user navigation (meta navigation at the top/right).
  
 Implementation
 ================
 
 Hooks
 -----
-- used hooks: 2
+- used hooks: 1
 
 		TemplateManager::include
-		LoadHandler
 
 New pages
 ------
-- new pages: 1
-
-		about/policies
+- new pages: 0
 
 Templates
 ---------
 - templates that replace other templates: 1
 
 		primaryNavMenuModified.tpl replaces templates/frontend/components/primaryNavMenu.tpl
-		usernavModified.tpl replaces templates/header/frontend/usernav.tpl
+		usernavModified.tpl replaces lib/pkp/templates/header/frontend/usernav.tpl
 
 - templates that are modified with template hooks: 0
-- new/additional templates: 1
+- new/additional templates: 0
 
-		policies.tpl
 
 Database access, server access
 -----------------------------
@@ -56,9 +52,7 @@ Classes, plugins, external software
 	
 		GenericPlugin
 		TemplateManager
-		Handler
-		AboutContextHandler
-	
+
 - OMP classes used (js, jqeury, ajax): 1
 
 		MenuHandler
@@ -70,8 +64,8 @@ Classes, plugins, external software
  
 Metrics
 --------
-- number of files: 13
-- lines of code: 644
+- number of files: 10
+- lines of code: 424
 
 Settings
 --------
