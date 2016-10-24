@@ -29,11 +29,6 @@
 			<img alt="" src="{$baseUrl}/plugins/generic/primaryNavigation/img/blog30.png"></img>
 		</a>
 	</li>
-	<li>
-		<a class="social_media_icon" href="newsletterlink" title="Get the Language Science Press newsletter">
-			<img alt="" src="{$baseUrl}/plugins/generic/primaryNavigation/img/newsletter30.png"></img>
-		</a>
-	</li>
 	{if $isUserLoggedIn}
 		<li>
 			{include file="controllers/page/tasks.tpl"}
