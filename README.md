@@ -5,7 +5,7 @@
 
 About
 -----
-This plugin replaces the template for the primary navigation menu and the user navigation (meta navigation at the top/right).
+This plugin replaces the template for the primary navigation menu and the user navigation (meta navigation at the top/right). This version will only work with older versions of omp-stable-1_2_0 (about middle of October 2016 or older).
 
 License
 -------
