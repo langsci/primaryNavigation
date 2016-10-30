@@ -32,6 +32,7 @@ class PrimaryNavigationHandler extends Handler {
 
 		// create new page for press policies
 		$templateMgr = TemplateManager::getManager($request);
+		$this->setupTemplate($request); // important for getting the correct menu
 		$context = $request->getContext();
 
 		$templateMgr->assign('submissionInfo', PluginAboutContextHandler::getSubmissionsInfo($context));
@@ -45,6 +46,7 @@ class PrimaryNavigationHandler extends Handler {
 
 		// create new page for sponsors
 		$templateMgr = TemplateManager::getManager($request);
+		$this->setupTemplate($request); // important for getting the correct menu
 		$context = $request->getContext();
 		$templateMgr->assign('sponsorship', PluginAboutContextHandler::getSponsorshipInfo($context));
 		$templateMgr->assign('pageTitle', 'plugins.generic.primaryNavigation.editorialPolicies.title');
