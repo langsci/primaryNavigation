@@ -45,9 +45,9 @@ class PrimaryNavigationPlugin extends GenericPlugin {
 				$templateMgr->display($this->getTemplatePath() . 
 				'primaryNavMenuModified.tpl', 'text/html', 'TemplateManager::include');
 				return true;
-			case 'header/frontend/usernav.tpl':
+			case 'frontend/components/header.tpl':
 				$templateMgr->display($this->getTemplatePath() . 
-				'usernavModified.tpl', 'text/html', 'TemplateManager::include');
+				'headerModified.tpl', 'text/html', 'TemplateManager::include');
 				return true;
 		}
 		return false;
