@@ -11,7 +11,7 @@
 
 	<li>
 		<a href="{url router=$smarty.const.ROUTE_PAGE page="catalog"}">
-			{translate key="navigation.catalog"}
+			{translate key="plugins.generic.primaryNavigation.catalog"}
 		</a>
 	</li>
 
