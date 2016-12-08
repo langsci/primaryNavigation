@@ -15,7 +15,7 @@
 
 	<message key="plugins.generic.primaryNavigation.displayName">Primary Navigation Plugin</message>
 	<message key="plugins.generic.primaryNavigation.description">This plugin replaces the template for the primary navigation.</message>
-	<message key="plugins.generic.primaryNavigation.catalog">Catalog</message>
+	<message key="plugins.generic.primaryNavigation.catalog">Books</message>
 	<message key="plugins.generic.primaryNavigation.series">Series</message>
 	<message key="plugins.generic.primaryNavigation.about">About</message>
 	<message key="plugins.generic.primaryNavigation.team">Team</message>
