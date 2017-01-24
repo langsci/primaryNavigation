@@ -46,6 +46,8 @@ class PrimaryNavigationPlugin extends GenericPlugin {
 				'primaryNavMenuModified.tpl', 'text/html', 'TemplateManager::include');
 				return true;
 			case 'frontend/components/header.tpl':
+			//	$templateMgr->assign('pageTitle',$params['smarty_include_vars']['pageTitle']);
+				$templateMgr->assign('pageTitleTranslated',$params['smarty_include_vars']['pageTitleTranslated']);			
 				$templateMgr->display($this->getTemplatePath() . 
 				'headerModified.tpl', 'text/html', 'TemplateManager::include');
 				return true;

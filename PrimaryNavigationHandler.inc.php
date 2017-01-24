@@ -49,7 +49,7 @@ class PrimaryNavigationHandler extends Handler {
 		$this->setupTemplate($request); // important for getting the correct menu
 		$context = $request->getContext();
 		$templateMgr->assign('sponsorship', PluginAboutContextHandler::getSponsorshipInfo($context));
-		$templateMgr->assign('pageTitle', 'plugins.generic.primaryNavigation.editorialPolicies.title');
+		$templateMgr->assign('pageTitle', 'plugins.generic.primaryNavigation.sponsors.title');
 		$primaryNavigationPlugin = PluginRegistry::getPlugin('generic', PRIMARYNAVIGATION_PLUGIN_NAME);
 		$templateMgr->display($primaryNavigationPlugin->getTemplatePath().'sponsors.tpl');
 	}

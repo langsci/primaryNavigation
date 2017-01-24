@@ -35,6 +35,7 @@
 	<message key="plugins.generic.primaryNavigation.supportUs">Support us</message>
 
 	<message key="plugins.generic.primaryNavigation.editorialPolicies.title">Editoral Policies</message>
+	<message key="plugins.generic.primaryNavigation.sponsors.title">Sponsors</message>	
 	<message key="plugins.generic.primaryNavigation.copyrightNotice">Copyright Notice</message>
 
 </locale>
